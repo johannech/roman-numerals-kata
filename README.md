@@ -13,7 +13,7 @@ For example:
 ```
 
 ## 1. Read and understand the code
-In `RomanNumerals` look into the lists (`ones`, `tens`, `hundreds` and `thusands`) and the `toDigits()` method .  
+In the `RomanNumerals` class look into the lists (`ones`, `tens`, `hundreds` and `thusands`) and the `toDigits()` method .  
 Also look closer at the `RomanNumeralsTest`, this uses [parameterized tests](https://github.com/junit-team/junit4/wiki/parameterized-tests).  
 Before moving on the the next task, understand how the existing code works.
 
