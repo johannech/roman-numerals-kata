@@ -3,6 +3,15 @@
 Based on the [Roman Numerals kata](http://codingdojo.org/kata/RomanNumerals/).  
 For more information on [Roman Numerals](http://www.novaroma.org/via_romana/numbers.html).
 
+The goal is to finish the `convert()` method. This is going to accept a normal number as input and convert it to Roman Numeral.  
+For example:
+```
+1 -> I
+5 -> V
+7 -> VII
+10 -> X
+```
+
 ## 1. Read and understand the code
 In `RomanNumerals` look into the lists (`ones`, `tens`, `hundreds` and `thusands`) and the `toDigits()` method .  
 Also look closer at the `RomanNumeralsTest`, this uses [parameterized tests](https://github.com/junit-team/junit4/wiki/parameterized-tests).  
