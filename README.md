@@ -3,7 +3,7 @@
 Based on the [Roman Numerals kata](http://codingdojo.org/kata/RomanNumerals/).  
 For more information on [Roman Numerals](http://www.novaroma.org/via_romana/numbers.html).
 
-The goal is to finish the `convert()` method. This is going to accept a normal number as input and convert it to Roman Numeral.  
+The goal is to finish method converting a normal number to a Roman Numeral.
 For example:
 ```
 1 -> I
