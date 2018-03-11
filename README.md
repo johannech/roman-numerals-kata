@@ -3,7 +3,7 @@
 Based on the [Roman Numerals kata](http://codingdojo.org/kata/RomanNumerals/).  
 For more information on [Roman Numerals](http://www.novaroma.org/via_romana/numbers.html).
 
-The goal is to finish method converting a normal number to a Roman Numeral.
+The overall goal is to convert a normal number to a Roman Numeral.
 For example:
 ```
 1 -> I
