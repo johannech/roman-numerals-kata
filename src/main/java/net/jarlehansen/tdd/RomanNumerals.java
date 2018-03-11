@@ -16,7 +16,7 @@ public class RomanNumerals {
         return "";
     }
 
-    private List<Integer> toIntegerList(int number) {
+    private List<Integer> toDigits(int number) {
         String numberString = StringUtils.leftPad(String.valueOf(number), 4, '0');
         return numberString.chars().map(Character::getNumericValue).boxed().collect(Collectors.toList());
     }
