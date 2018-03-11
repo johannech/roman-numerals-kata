@@ -18,7 +18,7 @@ Also look closer at the `RomanNumeralsTest`, this uses [parameterized tests](htt
 Before moving on the the next task, understand how the existing code works.
 
 ## 2. Convert from int to roman numeral
-Finish the method `RomanNumerals.convert` to take a normal number as input and convert it to Roman Numerals.  
+Finish the `RomanNumerals.convert()` method to take a normal number as input and convert it to Roman Numerals.  
 This task is completed when all the tests in `RomanNumeralsTest` passes.  
 
 - Only handle numbers up to 3000
@@ -26,7 +26,7 @@ This task is completed when all the tests in `RomanNumeralsTest` passes.
 
 
 ## 3. Handle invalid numbers
-Expand the `convert` function to handle invalid numbers.  
+Expand the `convert()` method to handle invalid numbers.  
 Invalid numbers in this setting is a negative number or a number larger than 3000.  
 When an invalid numbers is received throw an `IllegalArgumentException` with an detailed error message.  
 Remember to write new test cases in the class `RomanNumeralsInvalidInputTest`.
