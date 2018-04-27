@@ -3,6 +3,7 @@ package net.jarlehansen.tdd;
 import com.google.common.collect.Lists;
 import org.apache.commons.lang3.StringUtils;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -13,7 +14,13 @@ public class RomanNumerals {
     private final List<String> thousands = Lists.newArrayList("", "M", "MM", "MMM");
 
     public String convert(int number) {
-        return "";
+        if(number < 0 || number > 3000) {
+            throw new IllegalArgumentException("Invalid value! Value must be between 0-3000. Your value: " + number);
+        }
+
+        List<Integer> numberList = toDigits(number);
+        String result = thousands.get(numberList.get(0)) + hundreds.get(numberList.get(1)) + tens.get(numberList.get(2)) + ones.get(numberList.get(3));
+        return result;
     }
 
     private List<Integer> toDigits(int number) {

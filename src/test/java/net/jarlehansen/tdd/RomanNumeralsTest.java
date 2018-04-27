@@ -1,6 +1,7 @@
 package net.jarlehansen.tdd;
 
 
+import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -34,6 +35,30 @@ public class RomanNumeralsTest {
     @Before
     public void setUp() {
         romanNumerals = new RomanNumerals();
+    }
+
+    @Test
+    public void convert_receivesInt1_shouldReturnStringI() {
+        String result = romanNumerals.convert(1);
+        Assert.assertEquals("I", result);
+    }
+
+    @Test
+    public void convert_receivesInt11_shouldReturnStringXI() {
+        String result = romanNumerals.convert(11);
+        Assert.assertEquals("XI", result);
+    }
+
+    @Test
+    public void convert_receivesInt111_shouldReturnStringCXI() {
+        String result = romanNumerals.convert(111);
+        Assert.assertEquals("CXI", result);
+    }
+
+    @Test
+    public void convert_receivesInt1111_shouldReturnStringMCXI() {
+        String result = romanNumerals.convert(1111);
+        Assert.assertEquals("MCXI", result);
     }
 
     @Test
